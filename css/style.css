@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #08a6e4;
+    --color-primary-shadow: rgba(7, 172, 230, 0.16);
+    --color-redish: #fb3b64;
+    --color-green: #55dfb4;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-grey: #a5a5a5;
+    --color-light-grey: #f7f7f7;
+    --button-radius: 35px;
+    --font-raleway: "Raleway", sans-serif;
+    --font-open-sans: "Open Sans", sans-serif;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*↓↓↓ogolne wytyczne i klasy dotyczące całego projektu↓↓↓*/
+body {
+    font-family: var(--font-open-sans);
+}
+
+a {
+    text-decoration: none; /*usuniecie podkreslen tekstu z linkow na stronie*/
+}
+
+.container {
+    width: 1352px; /*nadanie szerokosci widoku zawartosci strony*/
+    margin: 0 auto; /*wysrodkowanie zawartosci kontenera wzgledem ekranu*/
+}
+
+/*↓↓↓stylizacja klas dla gornej beli z nawigacja↓↓↓*/
+.header {
+    height: 70px;
+    box-shadow: 0px 3px 6px #00000029; /*cien w header poniewaz bedzie na calej szerokości strony*/
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between; /*rozrzucenie elementow na boki boksu*/
+    align-items: center; /*wysrodkowanie w pionie*/
+    height: 100%; /*wysokosc taka smaa jak dla rodzica - header*/
+}
+
+.logo {
+    font-family: var(--font-raleway);
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.header__nav {
+    display: flex; /*nawigacja el li maja byc obok siebie*/
+}
+
+ul, li {
+}
+
+.nav__element {
+    padding: 0 26px; /*odstep pomiedzy liniami podkreslenia linku el*/
+}
+
+.nav__element:last-child {
+    padding-right: 0; /*resetujmy jego prawego odstepu dla osttaniego el*/
+}
+
+.nav__link {
+    color: var(--color-grey);
+    font-weight: 700;
+    font-size: 11px; /*0.6875rem*/
+    text-transform: uppercase;
+    padding: 28px 18px 22px; /*odstepy wew gora/pr/dol pomiedzy nastepnycm elementem*/
+    border-bottom: 4px solid transparent;
+    letter-spacing: 3px; /*0.1875rem*/
+}
+
+.nav__link:hover { /*zmiana wygladu po najechaniu myszką*/
+    color: var(--color-black);
+    border-color: var(--color-primary);
+}
