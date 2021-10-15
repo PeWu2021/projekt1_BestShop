@@ -84,3 +84,49 @@ ul, li {
     color: var(--color-black);
     border-color: var(--color-primary);
 }
+
+/*↓↓↓stylizacja klas dla sekcji otwierającej↓↓↓*/
+.opening { /*wysrodkowanie wzgledem głownej osi*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opening__content { /*wysrdokowanie tekstu i odsuniecie od gorej belki z nawigacja*/
+    margin-top: 130px;
+    text-align: center;
+}
+
+.opening__header {
+    font-family: var(--font-raleway);
+    font-size: 49px; /* 3.0625rem/ 16 (bazowa wielkość) = 3.0625 */
+}
+
+.opening__heading { /*nadanie marginesow dla tekstu Open shop on our platform and increase your sales*/
+    margin-top: 20px;
+    margin-bottom: 38px;
+}
+
+.opening__image { /*nadanie wysokosci i szerokosci dla obrazka, ktory jest tlem*/
+    width: 100%;
+    height: auto;
+}
+
+.btn { /*ogole style dla buttona*/
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 16px 65px;
+    border-radius: var(--button-radius);
+    border: none;
+}
+
+.btn--primary { /*stylowanie wygladu buttona*/
+    background-color: var(--color-primary);
+    border-radius: var(--button-radius);
+    box-shadow: 3px 10px 14px var(--color-primary-shadow);
+}
+
+.btn--large { /*rozciagniecie - nadanie wiekszych marginesow/odstepow wew dla buttona*/
+    padding: 22px 155px;
+}
