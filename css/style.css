@@ -132,30 +132,30 @@ ul, li {
 }
 /*stylowanie sekcji ze statystykami*/
 
-.statistics{
+.statistics{ /*okreslenie gornego marginesu dla tej sekcji*/
     margin-top: 100px;
     border: 1px solid red;
 }
-h2 {
+h2 { /*ostylowanie tytułu sekcji*/
     font-family: var(--font-raleway);
     font-size: 36px; /*2.25rem*/
     text-align: center;
 }
 .statistics__container{
     max-width: 800px;
-    display: flex;
-    justify-content: space-between;
-    margin: 100px auto 120px;
+    display: flex; /*przerzucenie z pionu w poziom*/
+    justify-content: space-between; /*rozrzucenie elemntow na krance okreslonego wyzej kontenera*/
+    margin: 100px auto 120px; /*ustawienie marginesow*/
     border: 1px solid blue;
 
 }
-.statistics__circle{
+.statistics__circle{ /*stylowanie kolka*/
     border-radius: 50%;
     width: 63px;
     height: 63px;
     position: relative;
     }
-.statistics__single{
+.statistics__single{ /*kazda statystyka osobno*/
     max-width: 160px;
     display: flex;
     flex-direction: column;
@@ -163,7 +163,9 @@ h2 {
     align-items: center;
     text-align: center;
     font-family: var(--font-raleway);
+    border: 1px solid yellow;
 }
+/*stylowanie dla kolek i obrazkow/ nadanie polozenia i koloru*/
 .statistics__single:nth-child(1) .statistics__circle {
     background-color: var(--color-redish);
 }
@@ -198,6 +200,7 @@ h2 {
     font-weight: 800;
     letter-spacing: 3px; /*0.1875rem*/
     margin-top: 30px;
+    border: 1px solid orangered;
 }
 .statistics__description{
     color: var(--color-grey);
